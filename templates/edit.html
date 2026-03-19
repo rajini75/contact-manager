@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <div class="card shadow p-4">
+        <h3 class="mb-3">Edit Contact</h3>
+
+        <form method="POST">
+            <input class="form-control mb-2" name="first_name" value="{{contact[1]}}" required>
+            <input class="form-control mb-2" name="last_name" value="{{contact[2]}}" required>
+            <input class="form-control mb-2" name="address" value="{{contact[3]}}">
+            <input class="form-control mb-2" name="email" value="{{contact[4]}}" required>
+            <input class="form-control mb-2" name="phone" value="{{contact[5]}}" required>
+
+            <button class="btn btn-primary">Update</button>
+            <a href="/" class="btn btn-secondary">Back</a>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
